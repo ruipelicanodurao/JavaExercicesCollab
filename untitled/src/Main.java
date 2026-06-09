@@ -1,9 +1,5 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
-import static java.lang.Math.random;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +8,7 @@ public class Main {
         System.out.println("maior valor:" +obterMaiorValor());
         System.out.println(classificarNota(15));
         System.out.println(maiorValor(10, 20));
+        System.out.println(ehPar(4));
     }
 
 
@@ -226,12 +223,19 @@ public class Main {
 
         }
 
-        public void ehPar () {
+        public static boolean ehPar (int num) {
             //Nome do Aluno:
             //Crie uma função que receba um número inteiro
             // e devolva true se ele for par ou false caso contrário.
             // modifica o void para algo que faça sentido para o exercicio
             // podes implementar ou nao um return, mas deves justificar a tua escolha
+            if (num % 2 == 0){
+                return true;
+            }
+            eles {
+                return false;
+            }
+
         }
 
         public void calcularMediaVetor () {
