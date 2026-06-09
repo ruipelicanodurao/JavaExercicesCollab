@@ -10,7 +10,7 @@ public class Main {
         //Implementação das Funções
         System.out.println(somarAteN(5));
         System.out.println("maior valor:" +obterMaiorValor());
-        System.out.println(m.classificarNota(15));
+        System.out.println(classificarNota(15));
     }
 
 
@@ -183,6 +183,7 @@ public class Main {
             // e conte quantos valores pares existem nesse intervalo.
             // modifica o void para algo que faça sentido para o exercicio
             // podes implementar ou nao um return, mas deves justificar a tua escolha
+
         }
 
         public void executarMenu () {
