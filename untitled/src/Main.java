@@ -10,6 +10,7 @@ public class Main {
         //Implementação das Funções
         System.out.println(somarAteN(5));
         System.out.println("maior valor:" +obterMaiorValor());
+        System.out.println(m.classificarNota(15));
     }
 
 
@@ -155,12 +156,24 @@ public class Main {
            return maior;
         }
 
-        public void classificarNota () {
-            //Nome do Aluno:
+        public string  classificarNota (int nota) {
+            //Nome do Aluno Kushal danai.
             //Crie uma função que receba uma nota entre 0 e 20,
             // valide o valor de entrada e devolva a respetiva classificação qualitativa.
             // modifica o void para algo que faça sentido para o exercicio
             // podes implementar ou nao um return, mas deves justificar a tua escolha
+            if (nota < 0 || nota > 20) {
+                return Nota invalida;
+            } else if (nota >= 18) {
+                return Excelente;
+            } else if (nota >= 14) {
+                return Bom;
+            } else if (nota >= 10) {
+                return Suficiente;
+            } else {
+                return Insuficiente;
+            }
+        }
         }
 
         public void contarParesNoIntervalo () {
