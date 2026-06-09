@@ -11,6 +11,7 @@ public class Main {
         System.out.println(somarAteN(5));
         System.out.println("maior valor:" +obterMaiorValor());
         System.out.println(classificarNota(15));
+        System.out.println(maiorValor(10, 20));
     }
 
 
@@ -156,22 +157,22 @@ public class Main {
            return maior;
         }
 
-        public string  classificarNota (int nota) {
+        public String  classificarNota (int nota) {
             //Nome do Aluno Kushal danai.
             //Crie uma função que receba uma nota entre 0 e 20,
             // valide o valor de entrada e devolva a respetiva classificação qualitativa.
             // modifica o void para algo que faça sentido para o exercicio
             // podes implementar ou nao um return, mas deves justificar a tua escolha
             if (nota < 0 || nota > 20) {
-                return Nota invalida;
+                return "Nota invalida";
             } else if (nota >= 18) {
-                return Excelente;
+                return "Excelente";
             } else if (nota >= 14) {
-                return Bom;
+                return "Bom";
             } else if (nota >= 10) {
-                return Suficiente;
+                return "Suficiente";
             } else {
-                return Insuficiente;
+                return "Insuficiente";
             }
         }
         }
@@ -211,11 +212,18 @@ public class Main {
             // podes implementar ou nao um return, mas deves justificar a tua escolha
         }
 
-        public void maiorValor () {
+        public int  maiorValor (int a , int b ) {
             //Nome do Aluno:
             //Crie uma função que receba dois números inteiros e devolva o maior dos dois.
             // modifica o void para algo que faça sentido para o exercicio
             // podes implementar ou nao um return, mas deves justificar a tua escolha
+            if (a > b){
+                return a;
+            }
+            else {
+                return b;
+            }
+
         }
 
         public void ehPar () {
